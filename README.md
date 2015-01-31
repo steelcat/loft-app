@@ -42,4 +42,5 @@
 Создадим проект по шагам:
 
 1. Устанавливаем Gulp и Bower
+
         npm install -g gulp bower
