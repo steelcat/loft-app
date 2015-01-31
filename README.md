@@ -151,7 +151,7 @@
 
         var gulp = require('gulp'); // Подключаем gulp
         // Определяем задачу gulp build (вторым параметром в массив передаются задачи которые запускаются перед выполнением данной задачи)
-        gulp.task('build', ['scripts', 'styles', 'templates']);
+        gulp.task('build');
         // Устанавливаем задачу gulp build по умолчанию, то есть, что будет происходить если написать просто gulp
         gulp.task('default', ['build']);
         
