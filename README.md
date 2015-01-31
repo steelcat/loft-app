@@ -93,6 +93,43 @@
             "gulp-autoprefixer": "~2.0.0"
         }
 
+Теперь наш файл должен выглядеть так:
+
+        {
+          "name": "loft-app",
+          "version": "1.0.0",
+          "description": "loft-app",
+          "main": "index.js",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/steelcat/loft-app.git"
+          },
+          "keywords": [
+            "loft-app"
+          ],
+          "author": "steelcat",
+          "license": "ISC",
+          "bugs": {
+            "url": "https://github.com/steelcat/loft-app/issues"
+          },
+          "homepage": "https://github.com/steelcat/loft-app",
+          "devDependencies": {
+            "gulp": "~3.8.10",
+            "gulp-load-plugins": "~0.8.0",
+            "require-dir": "~0.1.0",
+            "gulp-sass": "~1.2.4",
+            "gulp-csso": "~0.2.9",
+            "gulp-browserify": "~0.5.0",
+            "gulp-jade": "~0.10.0",
+            "gulp-uglify": "~1.0.2",
+            "gulp-connect": "~2.2.0",
+            "gulp-autoprefixer": "~2.0.0"
+          }
+        }
+
 
 
 
