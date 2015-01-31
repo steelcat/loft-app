@@ -41,14 +41,58 @@
 
 Для создания проекта нам потребуется установленный [Node.js](http://nodejs.org/ "Node.js"). После установки мы сможем устанавливать необходимые пакеты с помощью NPM.
 
-Создадим проект по шагам:
+Создадим проект по шагам, все команды запускаем в командной строке из корневой директории проекта:
 
-1. Инициализируем проект для установки необходимых пакетов Node.js
+1. Инициализируем проект для установки необходимых пакетов Node.js:
 
         npm init
 
-1. Устанавливаем Gulp
+Эта команда создаст файл package.json в корне директории.
+
+Он будет выглядеть так:
+
+        {
+          "name": "loft-app",
+          "version": "1.0.0",
+          "description": "loft-app",
+          "main": "index.js",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/steelcat/loft-app.git"
+          },
+          "keywords": [
+            "loft-app"
+          ],
+          "author": "steelcat",
+          "license": "ISC",
+          "bugs": {
+            "url": "https://github.com/steelcat/loft-app/issues"
+          },
+          "homepage": "https://github.com/steelcat/loft-app"
+        }
+
+2. Устанавливаем Gulp:
 
         npm install -g gulp
+
+3. Редактируем файл package.json и добавляем в него следующие строки:
+
+        "devDependencies": {
+            "gulp": "~3.8.10",
+            "gulp-load-plugins": "~0.8.0",
+            "require-dir": "~0.1.0",
+            "gulp-sass": "~1.2.4",
+            "gulp-csso": "~0.2.9",
+            "gulp-browserify": "~0.5.0",
+            "gulp-jade": "~0.10.0",
+            "gulp-uglify": "~1.0.2",
+            "gulp-connect": "~2.2.0",
+            "gulp-autoprefixer": "~2.0.0"
+        }
+
+
 
 
