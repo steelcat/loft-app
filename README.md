@@ -13,7 +13,7 @@
     |   |   ├── main.js
     |   ├── templates
     |   |   ├── index.jade
-    ├── tasks
+    ├── tasks   // Задачи Gulp
     |   ├── default.js
     ├── gulpfile.js
     ├── package.json
