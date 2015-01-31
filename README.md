@@ -154,6 +154,14 @@
         gulp.task('default', function() {
 	            // Код задачи по-умолчанию
         });
+ 
+ Проверяем работу Gulp:
+ 
+ 		>gulp
+		[13:05:50] Using gulpfile gulpfile.js
+		[13:05:50] Starting 'default'...
+		[13:05:50] Finished 'default' after 48 ?s
+
         
 
 
