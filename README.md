@@ -162,8 +162,21 @@
 		[13:05:50] Starting 'default'...
 		[13:05:50] Finished 'default' after 48 ?s
 
-        
+### Создадим первую задачу Gulp - подключим сервер Connect и LiveReload
 
+Создадим в папке *tasks* файл server.js и отредактируем его:
+
+		var gulp = require('gulp'),
+		connect = require('gulp-connect'),
+		livereload = require('gulp-livereload');
+		gulp.task('server', function() {
+			connect.server({
+				port: 8000,
+				root: 'public'
+			});
+			livereload.listen();
+			gulp.watch('public/*.html').on('change', livereload.changed);
+		});
 
 
 
