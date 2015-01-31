@@ -6,7 +6,7 @@
 
     .
     ├── public  // Каталог релиза
-    ├── src     // Каталог проекта
+    ├── src     // Каталог разработки
     |   ├── styles
     |   |   ├── main.scss
     |   ├── js
@@ -15,6 +15,7 @@
     |   |   ├── index.jade
     ├── tasks   // Задачи Gulp
     |   ├── default.js
+    ├── bower.json
     ├── gulpfile.js
     ├── package.json
 
