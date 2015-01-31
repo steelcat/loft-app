@@ -90,6 +90,7 @@
             "gulp-jade": "~0.10.0",
             "gulp-uglify": "~1.0.2",
             "gulp-connect": "~2.2.0",
+            "gulp-livereload": "~3.6.0",
             "gulp-autoprefixer": "~2.0.0"
         }
 
@@ -126,9 +127,16 @@
             "gulp-jade": "~0.10.0",
             "gulp-uglify": "~1.0.2",
             "gulp-connect": "~2.2.0",
+            "gulp-livereload": "~3.6.0",
             "gulp-autoprefixer": "~2.0.0"
           }
         }
+
+4. Устанавливаем выбранные зависимости командой:
+
+        npm install
+
+5.
 
 
 
