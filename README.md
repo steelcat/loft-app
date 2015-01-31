@@ -162,9 +162,9 @@
 		[13:05:50] Starting 'default'...
 		[13:05:50] Finished 'default' after 48 ?s
 
-### Составляем первую задачу для Gulp - задачу сервера
+### Составляем первую задачу для Gulp - задачу сервера SERVER
 
-Создаем в папке *tasks* файл server.js и редактриуем его:
+Создаем в папке *tasks* файл server.js и редактируем его:
 
 		var gulp = require('gulp'),
 		connect = require('gulp-connect');
@@ -182,6 +182,37 @@
 		[14:15:00] Starting 'server'...
 		[14:15:00] Finished 'server' after 46 ms
 		[14:15:00] Server started http://localhost:8000
+
+### Составляем задачу слежения за файлами в папке разработки WATCH
+
+Создаем в папке *tasks* файл watch.js и редактируем его:
+
+		var gulp = require('gulp'),
+			$ = require('gulp-load-plugins')(); // автоматическая загрузка плагинов gulp
+		gulp.task('watch', ['styles', 'scripts', 'templates'], function() {
+			// при изменении любых файлов с расширением jade в папке src запускается задача templates, аналогично для js и scss файлов в соответствующих папках
+			gulp.watch('src/**/*.jade', ['templates']);
+			gulp.watch('src/**/*.js', ['scripts']);
+			gulp.watch('src/**/*.scss', ['styles']);
+		});	
+
+Оказывается можно подгрузить сразу все нужные плагины Gulp одной строкой <code>$ = require('gulp-load-plugins')();</code>, что мы и сделали.
+
+Созданная нами задача не будет работать без задач TEMPLATES, SCRIPTS, STYLES.
+
+### Создаем задачу компиляции шаблонов Jade - TEMPLATES
+
+Создаем в папке *tasks* файл templates.js и редактируем его:
+
+		var gulp = require('gulp'),
+			$ = require('gulp-load-plugins')(); // автоматическая загрузка плагинов gulp
+		gulp.task('templates', function(){
+  			return gulp.src('src/templates/**/*.jade')
+    			.pipe($.jade()) // компилируем jade в html
+    			.pipe(gulp.dest('public')) // путь где будут лежать html файлы
+    			.pipe($.connect.reload()); // перезагрузка сервера
+		});
+
 
 
 
