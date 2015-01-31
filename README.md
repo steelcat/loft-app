@@ -42,6 +42,12 @@
 
 Создадим проект по шагам:
 
-1. Устанавливаем Gulp и Bower
+1. Инициализируем проект для установки необходимых пакетов Node.js
 
-        npm install -g gulp bower
+        npm init
+
+1. Устанавливаем Gulp
+
+        npm install -g gulp
+
+
