@@ -6,16 +6,16 @@
 
     .
     ├── app     // Каталог разработки
-    |   ├── styles
-    |   |   ├── main.scss
-    |   ├── js
-    |   |   ├── main.js
-    |   ├── templates
-    |   |   ├── index.jade
+    ├   ├── styles
+    ├   ├   ├── main.scss
+    ├   ├── js
+    ├   ├   ├── main.js
+    ├   ├── templates
+    ├   ├   ├── index.jade
     ├── jess    // Собственная библиотека Jade, SASS и JavaScript
     ├── public  // Каталог релиза
     ├── tasks   // Задачи Gulp
-    |   ├── default.js
+    ├   ├── default.js
     ├── bower.json
     ├── gulpfile.js
     ├── package.json
