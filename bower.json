@@ -13,5 +13,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "bourbon": "~4.2.1",
+    "neat": "~1.7.1",
+    "jquery": "~1.11.2"
+  },
+  "devDependencies": {}
 }

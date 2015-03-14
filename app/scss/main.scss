@@ -1,0 +1,14 @@
+$visual-grid: true;
+@import 'vendor';
+.container {
+  @include outer-container;
+}
+.left {
+  @include span-columns(4);
+  background: #333;
+}
+
+.right {
+  @include span-columns(4);
+  background-color: #666;
+}
